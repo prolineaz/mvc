@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: _docker/Dockerfile
+    volumes:
+      - ./:/var/www/
+    ports:
+      - "8080:8080"
+    command: sh -c "composer install --ignore-platform-reqs && php -S 0.0.0.0:8080 -t /var/www/public"
+    container_name: mvc_app
