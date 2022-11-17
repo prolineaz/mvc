@@ -1,4 +1,8 @@
-# Simple Start
+# Test Framework
+
+A simple example of a framework developed in PHP and with the ability to run through Docker
+
+## Simple Start
 
 From CLI
 ```bash
